@@ -18,7 +18,6 @@ int idInserido = operacoes.Criar(tarefa01);
 
 Console.WriteLine($"Dados inseridos no banco de dados com sucesso. Id: {idInserido}");
 
-// ---------------- ALTERAR ----------------
 Console.Write("\nDigite o ID da tarefa que deseja ALTERAR: ");
 int idAlterar = int.Parse(Console.ReadLine());
 
@@ -36,7 +35,6 @@ tarefaAlterada.DataExecucao = DateTime.Now;
 operacoes.Alterar(tarefaAlterada);
 Console.WriteLine("Tarefa alterada!");
 
-// ---------------- EXCLUIR ----------------
 Console.Write("\nDigite o ID da tarefa que deseja EXCLUIR: ");
 int idExcluir = int.Parse(Console.ReadLine());
 
